@@ -2,7 +2,6 @@
 _Saving through spending_
 
 ## Inspiration
-
 _Would you still buy boba if it were 10 dollars instead of 7?_ We were inspired by the laws of supply and demand and wondered how prices could change to the benefit of the consumer. By leveraging added fees, we help consumers reach their savings goals and cut down on unnecessary spending.
 
 ## What it does
@@ -16,11 +15,11 @@ We receive an input that is a memo and by asking AI we determine how good of a p
 
 From this, the tax rate is calculated and we take that amount of the total purchase and put that into your savings.
 
-
 | Input | Output                 |
 |------|--------------------------------|
 |<pre>Transaction ID:                 1<br>Username:                John Doe<br>Name of Store:        Burger King<br>Name of Item:             Big Mac <br>Price of Item:             \$30.00 <br>Money in Discretionary:   \$100.00<br>Saving Goals:              \$50.00 <br>Money in Locked Savings:    \$0.00 </pre> | <pre>Tax Rate:                    37.5<br>Added Amount:              \$11.25<br>Money in Discretionary:    \$58.75<br>Money in Locked Savings:   \$11.25</pre>|
 
+Since $30 Big Macs aren't the greatest financial decision, the fee is large. Hopefully, this dissuades consumers from purchasing these burgers. Even if they do, money is saved to offset the spending.
 
 ## What's next for Safe Stash
 
@@ -52,3 +51,6 @@ Meet the 4 team members that make up Safe Spend!
 
 **Ninad**: Developed the algorithm that found the tax rate and coded the website. Freshman at Tandon (CS)
 
+**Slides**
+See our slides!
+https://docs.google.com/presentation/d/1iirjpmrzYvk_uedimIzKLB7gUQVvKoH6x5uoJUoCJ3s/edit?usp=sharing
