@@ -1,52 +1,38 @@
 # Safe Spend 
-
-## Punishing Impulse Purchases
-
-Our project is to make economics more accessible to the consumer. After a purchase it forces a part of your budget into a savings account that cannot be immediately touched. This amount is based on a tax which depends on the type of the product that is brought. For example a purchase for grocery goods will have a lower tax rate than a purchase for boba.
-
-
-## Tax Rate 
-
-We receive an input that is a memo. The memo contains information such as the goods that were purchased. From this we calculate what the tax rate is and we take a percentage of the total purchase and put that into savings.
-
-
-| Input | Output                 |
-|------|--------------------------------|
-|<pre>Name of Store:           Value<br>Name of Item:            Value<br>Price of Item:           Value<br>Money in Discretionary:  Value<br>Saving Goals:            Value<br>Money in Locked Savings: Value</pre> |<pre>Tax Rate:                Value<br>Added Amount:            Value<br>Money in Discretionary:  Value<br>Money in Locked Savings: Value</pre>|
-|<pre>Name of Store:           Value<br>Name of Item:            Value<br>Price of Item:           Value<br>Money in Discretionary:  Value<br>Saving Goals:            Value<br>Money in Locked Savings: Value</pre> |<pre>Tax Rate:                Value<br>Added Amount:            Value<br>Money in Discretionary:  Value<br>Money in Locked Savings: Value</pre>|
-|<pre>Name of Store:           Value<br>Name of Item:            Value<br>Price of Item:           Value<br>Money in Discretionary:  Value<br>Saving Goals:            Value<br>Money in Locked Savings: Value</pre> |<pre>Tax Rate:                Value<br>Added Amount:            Value<br>Money in Discretionary:  Value<br>Money in Locked Savings: Value</pre>|
-
-
-## Road Map
-1. Launch with basic functionality. Three accounts, one for locked savings, one for unlocked savings, and one for discretionary. Transfer of money with algorithms.
-2. Invest the money in the savings account.
-3. Scanning Receipts.
-4. Integration into payment platform.
-5. Making this profitable with monetization and banking.
-
-
-# Project Story
+_Punishing Impulse Purchases_
 
 ## Inspiration
 
 _Would you still buy boba if it were 10 dollars instead of 7?_ We leverage markets to help consumers reach their savings goals and cut down on unnecessary spending.
 
 ## What it does
+For each purchase made, we determine an extra fee based on the necessity of the item bought. The more necessary an item, the lower the fee. Rent would have no tax, and coffee might have 30% added to it. Every fee goes into a locked savings account, which helps consumers save and discourages people from making frivolous pruchases. Prudent purchases are untaxed, incentivizing good decisions. 
 
-We use AI to determine an extra fee for items you want to buy, depending on their necessity. Every fee goes into a locked savings account, which helps consumers save and discourages people from making frivolous purchases. Prudent purchases are untaxed, incentivizing good decisions.
+After a set timeframe or after a certain savings goal is reach the money in the locked savings is made available and transferred to an unlocked savings.
 
-Safe Stash uses 
+## Tax Rate 
 
-## How we built it
+We receive an input that is a memo and by asking AI we determine how good of a purchase this is. The memo contains information such as the name of the store, price of the item, what your goals are and how much money you currently have. 
 
-## Challenges we ran into
+From this, the tax rate is calculated and we take a percentage of the total purchase from your discretionary spending and put that into your savings.
 
-## Accomplishments that we're proud of
 
-## What we learned
+| Input | Output                 |
+|------|--------------------------------|
+|<pre>Transaction ID:                 1<br>Username:                John Doe<br>Name of Store:        Burger King<br>Name of Item:             Big Mac <br>Price of Item:             \$30.00 <br>Money in Discretionary:   \$100.00<br>Saving Goals:              \$50.00 <br>Money in Locked Savings:    \$0.00 </pre> | <pre>Tax Rate:                    37.5<br>Added Amount:              \$11.25<br>Money in Discretionary:    \$58.75<br>Money in Locked Savings:   \$11.25</pre>|
+|<pre>Name of Store:           Value<br>Name of Item:            Value<br>Price of Item:           Value<br>Money in Discretionary:  Value<br>Saving Goals:            Value<br>Money in Locked Savings: Value</pre> |<pre>Tax Rate:                Value<br>Added Amount:            Value<br>Money in Discretionary: <br>Money in Locked Savings: Value</pre>|
+|<pre>Name of Store:           Value<br>Name of Item:            Value<br>Price of Item:           Value<br>Money in Discretionary:  Value<br>Saving Goals:            Value<br>Money in Locked Savings: Value</pre> |<pre>Tax Rate:                Value<br>Added Amount:            Value<br>Money in Discretionary:  Value<br>Money in Locked Savings: Value</pre>|
 
 ## What's next for Safe Stash
 
-Because Safe Stash is currently a framework that requires manual input of receipts/transactions, the next step for Safe Stash is its integration into existing payment methods, which would allow for ease of use.
+#### Our Roadmap
+1. Launch with basic functionality, inlucding budgeting through spending. 
+2. Add investment functionality to the savings account.
+3. Add purchase history into the tax function which discourages repeated purchases of the same item.
+4. Implement the ability to scan receipts, improving the ease of use.
+5. Integration into payment platform.
+6. Monetization, including promoting advertisers by lessening our artificial taxes on certain products.
+7. Develop better algorithms trained on custom data.
 
-We also plan on developing better algorithms trained on custom data.
+<!-- The theme behind our product is to control and manipulate information for the benefit of consumers. This can be extended after artificially increased prices to limiting info on account balances. Add hidden costs like tax and tip. Make them think about big purchases, set time limits. A function where you can transfer money from the savings to a necessities account, which only works for necessities. -->
+
